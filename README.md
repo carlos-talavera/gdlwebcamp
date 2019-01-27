@@ -29,6 +29,10 @@ El proyecto utiliza tanto lo más reciente, Fetch API, como AJAX, además se com
 
 Lo cual hace de él un trabajo muy completo que permitirá a los que necesiten una zona de administración, un sitio web para un evento, aprender de aquí y sacar adelante su propia idea.
 
+## Uso de AdminLTE
+
+AdminLTE es uno de los templates más utilizados para zonas de administración, este proyecto trata muchas de sus funcionalidades, formularios, botones, checkbox personalizados, entre muchas otras cosas.
+
 ## Versiones utilizadas en este proyecto
 
 - PHP - 7
