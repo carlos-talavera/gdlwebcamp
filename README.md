@@ -7,7 +7,6 @@ En este proyecto todos los archivos externos utilizados fueron almacenados local
 En el archivo paypal.php (/includes/paypal.php) se encuentra la clave secreta y la clave del cliente, ahí se cambiarían por las de su aplicación:
 
 ```php
-
 <?php
 
 require 'paypal/autoload.php'; // Librería almacenada localmente
