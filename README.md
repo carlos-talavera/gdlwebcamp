@@ -23,6 +23,24 @@ $apiContext = new \PayPal\Rest\ApiContext(
 );
 ```
 
+## LeafletJS
+
+Para la creación de este proyecto se utilizó la librería open-source LeafletJS, enfocada a los mapas interactivos, para cambiar la ubicación del lugar basta con editar el archivo main.js (js/main.js), en la línea 9:
+
+```js
+var map = L.map('mapa').setView([20.573392, -100.382874], 17); // Aquí se cambian las coordenadas por las que requeridas
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      L.marker([20.573392, -100.382874]).addTo(map)
+      .bindPopup('GDLWebCamp 2018 <br> Boletos ya disponibles')
+      .openPopup()
+      .bindTooltip('Un Tooltip')
+      .openTooltip();
+```
+
 ## Uso de Fetch API y AJAX
 
 El proyecto utiliza tanto lo más reciente, Fetch API, como AJAX, además se combina jQuery con JS, y se trata la subida de imágenes al servidor mediante estas dos formas.
