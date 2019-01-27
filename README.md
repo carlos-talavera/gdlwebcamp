@@ -11,7 +11,7 @@ Para cambiar los datos de la conexión a la BD hay que ir al archivo bd_conexion
 
   $conn = new mysqli("host", "usuario", "contraseña", "nombre_bd"); // Editar aquí
   $conn->set_charset("UTF8");
-  date_default_timezone_set('America/Mexico_City');
+  date_default_timezone_set('America/Mexico_City'); // Cambiar por su región
 
   if($conn->connect_error) {
 
