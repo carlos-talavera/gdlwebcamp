@@ -2,6 +2,25 @@
 
 En este proyecto todos los archivos externos utilizados fueron almacenados localmente, pero de cualquier manera se pueden utilizar las versiones del CDN
 
+## Conexión a la BD
+
+Para cambiar los datos de la conexión a la BD hay que ir al archivo bd_conexion.php (includes/funciones/bd_conexion.php), y modificar la creación de la conexión:
+
+```php
+<?php
+
+  $conn = new mysqli("host", "usuario", "contraseña", "nombre_bd"); // Editar aquí
+  $conn->set_charset("UTF8");
+  date_default_timezone_set('America/Mexico_City');
+
+  if($conn->connect_error) {
+
+    $error = $conn->connect_error;
+    echo $error;
+
+  }
+```
+
 ## Edición de los pagos con PayPal
 
 En el archivo paypal.php (/includes/paypal.php) se encuentra la clave secreta y la clave del cliente, ahí se cambiarían por las de su aplicación:
