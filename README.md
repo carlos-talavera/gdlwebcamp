@@ -41,11 +41,50 @@ var map = L.map('mapa').setView([20.573392, -100.382874], 17); // Aquí se cambi
       .openTooltip();
 ```
 
-## Uso de Fetch API y AJAX
+## Uso de Fetch API
 
-El proyecto utiliza tanto lo más reciente, Fetch API, como AJAX, además se combina jQuery con JS, y se trata la subida de imágenes al servidor mediante estas dos formas.
+El proyecto utiliza lo más reciente, Fetch API, además se combina jQuery con JS, y se trata la subida de imágenes al servidor mediante estas dos formas.
 
 Lo cual hace de él un trabajo muy completo que permitirá a los que necesiten una zona de administración, un sitio web para un evento, aprender de aquí y sacar adelante su propia idea.
+
+## Fetch API
+
+Uso de Fetch API subiendo archivos al servidor (imágenes):
+
+```js
+let datos = new FormData();
+                datos.append('accion', 'actualizar');
+                datos.append('id', id_admin);
+                datos.append('usuario', usuario);
+                datos.append('nombre', nombre);
+                datos.append('nivel', nivel);
+
+                if(passAntigua.value.trim() !== "" && passNueva.value.trim() !== "") { // Validación de campos
+
+                    datos.append('passNueva', passNueva.value);
+
+                }
+
+                if(foto.length > 0) {
+                
+                    for (let i = 0; i < foto.length; i++) {
+
+                        let file = foto[i];
+
+                        datos.append('inputFile[]', file); // Esto será recibido por el archivo de PHP dentro del array $_FILES
+
+                    }
+
+                }
+
+                fetch(url, {
+                    method: 'POST',
+                    headers: reqHeaders,
+                    body: datos
+                }).then(resultados => {
+                    return resultados.json();
+                }).then(edicion => validar(edicion));
+```
 
 ## Uso de AdminLTE
 
