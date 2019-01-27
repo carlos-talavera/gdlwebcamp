@@ -23,6 +23,12 @@ $apiContext = new \PayPal\Rest\ApiContext(
 );
 ```
 
+## Uso de Fetch API y AJAX
+
+El proyecto utiliza tanto lo más reciente, Fetch API, como AJAX, además se combina jQuery con JS, y se trata la subida de imágenes al servidor mediante estas dos formas.
+
+Lo cual hace de él un trabajo muy completo que permitirá a los que necesiten una zona de administración, un sitio web para un evento, aprender de aquí y sacar adelante su propia idea.
+
 ## Versiones utilizadas en este proyecto
 
 - PHP - 7
