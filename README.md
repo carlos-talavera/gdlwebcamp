@@ -34,7 +34,7 @@ var map = L.map('mapa').setView([20.573392, -100.382874], 17); // Aquí se cambi
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       }).addTo(map);
 
-      L.marker([20.573392, -100.382874]).addTo(map)
+      L.marker([20.573392, -100.382874]).addTo(map) // Agregar un tooltip, un mensaje flotante con información relevante del evento
       .bindPopup('GDLWebCamp 2018 <br> Boletos ya disponibles')
       .openPopup()
       .bindTooltip('Un Tooltip')
