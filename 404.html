@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Página no encontrada</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        * {
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        html {
+            color: white;
+            display: table;
+            font-family: sans-serif;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+        }
+
+        body {
+            display: table-cell;
+            vertical-align: middle;
+            margin: 2em auto;
+            background-color: #353535;
+        }
+
+        h1 {
+            color: white;
+            font-size: 2em;
+            font-weight: 400;
+            margin-top: -4vh;
+        }
+
+        a {
+            color: #fe4918;
+            text-decoration: none;
+            transition: all .3s ease;
+        }
+
+        a:hover {
+            color: rgb(202, 243, 19);
+            -webkit-transform: scale(2);
+            transform: scale(2);
+        }
+
+        p {
+            margin: 0 auto;
+            width: 280px;
+        }
+
+        @media only screen and (max-width: 280px) {
+
+            body, p {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 1.5em;
+                margin: 0 0 0.3em;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Página No Encontrada</h1>
+    <img src="img/logo.svg" alt="Logo GDLWebCamp">
+    <p>Puedes regresar al sitio principal presionando <a href="index.php">aquí</a></p>
+</body>
+</html>
+<!-- IE needs 512+ bytes: https://blogs.msdn.microsoft.com/ieinternals/2010/08/18/friendly-http-error-pages/ -->

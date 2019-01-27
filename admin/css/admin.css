@@ -1,0 +1,279 @@
+.skin-blue .sidebar-menu>li.header {
+
+    color: #FFFFFF;
+
+}
+
+.remember-me-login {
+
+    padding-left: 5px!important;
+
+}
+
+.switch {
+
+    position: relative;
+    display: inline-block;
+    width: 54px;
+    height: 28px;
+
+}
+
+.switch input { 
+
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+}
+
+.slider {
+
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+
+}
+
+.slider:before {
+
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+
+}
+
+input:checked + .slider {
+
+    background-color: #00a65a;
+
+}
+
+input:focus + .slider {
+
+    box-shadow: 0 0 1px #00a65a;
+
+}
+
+input:checked + .slider:before {
+
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+
+}
+
+/* Rounded sliders */
+.slider.round {
+
+    border-radius: 34px;
+
+}
+
+.slider.round:before {
+  
+    border-radius: 50%;
+
+}
+
+.btn-file {
+    
+    position: relative;
+    overflow: hidden;
+
+}
+.btn-file input[type=file] {
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+
+}
+
+.fot_perf,
+.fot_inv {
+
+    display: block;
+
+}
+
+.btn_icono {
+
+    cursor: default!important;
+    outline: none!important;
+
+}
+
+.btn_icono:active {
+
+    border-style: outset!important;
+
+}
+
+.btn_icono:hover {
+
+    box-shadow: none!important;
+    cursor: default!important;
+
+}
+
+.simbologia-cat {
+
+    list-style: none;
+    margin: 5px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.sqr-cat {
+
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+
+}
+
+/* Contenedor de los asides y los contenedores de los eventos de cada día */
+
+.eventos-modal {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+/* Asides con los botones de las flechas - Simulación de slider */
+
+.aside-btn-arrow-1 {
+
+    order: 1;
+
+}
+
+.aside-btn-arrow-2 {
+
+    order: 3;
+
+}
+
+/* Botones con el ícono de las flechas */
+
+.btn-arrow-slider {
+
+    display: none;
+    vertical-align: -200px;
+
+}
+
+.btn-arrow-slider:focus, .btn-arrow-slider:hover {
+
+    color: white;
+
+}
+
+.contenido-dia {
+
+  padding: 10px 20px 20px 20px;
+  display: none;
+
+}
+
+.contenido-dia > div {
+
+    padding: 2px;
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  .contenido-dia > div {
+
+    float: left;
+    width: 33.3%;
+
+  }
+
+}
+
+.contenido-dia > div p {
+
+  text-align: left;
+
+}
+
+.contenido-dia > div label {
+
+  display: block;
+  margin: 10px 0;
+  font-weight: normal!important;
+
+}
+
+.contenido-dia > div label input {
+
+  margin-right: 10px;
+
+}
+
+.contenido-dia > div label time {
+
+  color: #3C8DBC;
+
+}
+
+.contenido-dia > div label time.time-act {
+
+  color: #1ABC9C;
+
+}
+
+/* Invitado de cada evento */
+
+.contenido-dia .autor {
+
+  text-transform: uppercase;
+  font-size: 12px;
+
+}
+
+/* Color cool sacado de iCheck */
+
+.btn-green-light {
+
+    color: white;
+    background-color: #1ABC9C;
+
+}
+
+.btn-green-light:hover, .btn-green-light:focus {
+
+    color: white;
+    background-color: #19AC9C;
+
+}
