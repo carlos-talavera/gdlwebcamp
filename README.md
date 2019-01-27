@@ -25,5 +25,5 @@ $apiContext = new \PayPal\Rest\ApiContext(
 
 ## Versiones utilizadas en este proyecto
 
-- PHP | 7
-- JS | ES6
+- PHP - 7
+- JS - ES6
